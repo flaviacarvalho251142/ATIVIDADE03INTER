@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Academia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="arquivo.sql" method="=post">
+        <fieldset>
+            <legend>CADASTRO</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone">
+        </fieldset>
+
+        <fieldset>
+            <legend>PLANOS DE TREINOS</legend>
+            <label>Escolha seu objetivo:</label>
+            <input type="radio" id="perder-peso" name="objetivo" value="perder-peso">
+            <label for="perder-peso">Perder Peso</label>
+
+            <input type="radio" id="ganhar-musculo" name="objetivo" value="ganhar-musculo">
+            <label for="ganhar-musculo">Ganhar Massa Muscular</label>
+
+            <input type="radio" id="manutencao" name="objetivo" value="manutencao">
+            <label for="manutencao">Manutenção</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>PREFERÊNCIA DE ATIVIDADES</legend>
+            <label>Quais atividades você gosta?</label>
+            <input type="checkbox" id="musculacao" name="atividades" value="musculacao">
+            <label for="musculacao">Musculação</label>
+
+            <input type="checkbox" id="cardio" name="atividades" value="cardio">
+            <label for="cardio">Cardio</label>
+
+            <input type="checkbox" id="pilates" name="atividades" value="pilates">
+            <label for="pilates">Pilates</label>
+
+            <input type="checkbox" id="crossfit" name="atividades" value="crossfit">
+            <label for="crossfit">Crossfit</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>DETALHES ADICIONAIS</legend>
+            <label for="altura">Altura (cm):</label>
+            <input type="number" id="altura" name="altura" required>
+
+            <label for="peso">Peso (kg):</label>
+            <input type="number" id="peso" name="peso" required>
+
+            <label for="observacoes">Observações:</label>
+            <textarea id="observacoes" name="observacoes" rows="4" cols="30"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>CONFIRMAÇÃO</legend>
+            <label for="horario">Qual horário prefere para treinar?</label>
+            <select id="horario" name="horario">
+                <option value="manha">Manhã</option>
+                <option value="tarde">Tarde</option>
+                <option value="noite">Noite</option>
+            </select>
+        </fieldset>
+
+        <button type="reset">Reset</button>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
